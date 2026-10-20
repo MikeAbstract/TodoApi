@@ -13,14 +13,14 @@ A RESTful Todo API built with **.NET 9* following **Clean Architecture** princip
 
 ## Tech Stack
 
-| Area            | Technology                  |
-| --------------- | --------------------------- |
-| Framework       | .NET 8 / ASP.NET Core       |
-| Language        | C#                          |
-| ORM             | Entity Framework Core       |
-| Database        | PostgreSQL                  |
-| Authentication  | JWT Bearer                  |
-| Validation      | FluentValidation            |
+| Area            | Technology            |
+| --------------- |-----------------------|
+| Framework       | .NET 9 / ASP.NET Core |
+| Language        | C#                    |
+| ORM             | Entity Framework Core |
+| Database        | PostgreSQL            |
+| Authentication  | JWT Bearer            |
+| Validation      | FluentValidation      |
 
 ## Architecture
 
@@ -28,12 +28,10 @@ The solution follows Clean Architecture, where dependencies point inward toward 
 
 ```
 TodoApi/
-├── src/
-│   ├── TodoApi.Domain/           # Entities and core business rules
-│   ├── TodoApi.Application/      # Use cases, DTOs, validators, interfaces
-│   ├── TodoApi.Infrastructure/   # EF Core, repositories, auth services
-│   └── TodoApi.API/              # Controllers, middleware, configuration
-└── README.md
+├── TodoApi.API/              # Controllers, middleware, configuration
+├── TodoApi.Application/      # DTOs, services, interfaces, validators
+├── TodoApi.Infrastructure/   # EF Core DbContext, entities, migrations
+└── TodoApi.Sln
 ```
 
 > Adjust the folder names above to match your actual solution structure.
@@ -42,8 +40,7 @@ TodoApi/
 
 ### Prerequisites
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- [PostgreSQL](https://www.postgresql.org/download/)
+- [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
 
 ### Installation
 
