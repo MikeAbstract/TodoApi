@@ -18,7 +18,7 @@ A RESTful Todo API built with **.NET 9* following **Clean Architecture** princip
 | Framework       | .NET 9 / ASP.NET Core |
 | Language        | C#                    |
 | ORM             | Entity Framework Core |
-| Database        | PostgreSQL            |
+| Database        | SQL SERVER            |
 | Authentication  | JWT Bearer            |
 | Validation      | FluentValidation      |
 
